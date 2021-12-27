@@ -2,6 +2,15 @@
 	import Meta from '../components/Meta/Base.svelte'
 </script>
 
+<svelte:head>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+	/>
+</svelte:head>
+
 <Meta />
 <slot />
 
@@ -25,8 +34,10 @@
 	}
 
 	body {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-			Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		overflow: hidden;
+		font-family: Bangers, cursive;
+		color: white;
+		background: black;
 	}
 
 	button,

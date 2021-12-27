@@ -6,9 +6,9 @@ import skipReserved from './reserved/skip.js'
 
 import security from './security.js'
 import reserved from './reserved/index.js'
-import hello from './test/hello.js'
+import newBattle from './battle/new.js'
 
-const handlers = [hello] // TODO: Routes
+const handlers = [newBattle]
 
 if (!DEV) app.use(compression({ threshold: 0 }))
 

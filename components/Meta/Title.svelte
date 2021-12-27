@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let value = '' // TODO: Default title
+	export let value = 'Base Battles'
 </script>
 
 <svelte:head>

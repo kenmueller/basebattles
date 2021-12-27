@@ -19,12 +19,17 @@ const getContentSecurity = (): ContentSecurity => {
 			directives: {
 				'default-src': [SELF],
 				'connect-src': [SELF, SOCKET_ORIGIN.href],
-				'style-src': [SELF, ...(dev ? [INLINE] : [])],
+				'style-src': [
+					SELF,
+					...(dev ? [INLINE] : []),
+					'https://fonts.googleapis.com'
+				],
 				'script-src': [
 					SELF,
 					nonceString(nonce),
 					"'sha256-cXOZe05CqZ4xvGscU85F4K+8OEag6anwgMUZSpWB/WA='" // Service worker
 				],
+				'font-src': [SELF, 'https://fonts.gstatic.com'],
 				'base-uri': [SELF],
 				'upgrade-insecure-requests': !dev
 			}

@@ -6,12 +6,12 @@ const manifest: WebAppManifest = {
 	lang: 'en-US',
 	scope: '/',
 	start_url: '/',
-	name: '', // TODO: Name
-	short_name: '', // TODO: Short name
-	description: '', // TODO: Description
+	name: 'Base Battles',
+	short_name: 'Battles',
+	description: 'Base Battles',
 	display: 'standalone',
-	theme_color: '', // TODO: Theme color
-	background_color: '', // TODO: Background color
+	theme_color: 'black',
+	background_color: 'black',
 	categories: [], // TODO: Categories
 	icons: [] // TODO: Icons
 }
