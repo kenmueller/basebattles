@@ -56,7 +56,16 @@
 	}
 
 	button {
+		font-size: 2rem;
 		margin: auto;
+		padding: 1rem 2rem;
+		background: rgba(#007aff, 0.5);
+		border-radius: 0.7rem;
+		transition: opacity 0.3s;
+
+		&:hover {
+			opacity: 0.7;
+		}
 	}
 
 	[aria-busy] {

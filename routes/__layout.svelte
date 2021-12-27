@@ -21,9 +21,11 @@
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
+		line-height: inherit;
+		letter-spacing: 0.04em;
 		font-family: inherit;
 		font-size: inherit;
-		font-weight: inherit;
+		color: inherit;
 		border: none;
 		outline: none;
 	}
@@ -35,6 +37,7 @@
 
 	body {
 		overflow: hidden;
+		line-height: 1;
 		font-family: Bangers, cursive;
 		color: white;
 		background: black;
@@ -47,5 +50,9 @@
 
 	button:disabled {
 		cursor: default;
+	}
+
+	svg {
+		display: block;
 	}
 </style>
