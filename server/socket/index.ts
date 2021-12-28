@@ -3,11 +3,11 @@ import type { IncomingMessage } from 'http'
 import type { Socket } from 'net'
 import Pattern from 'url-pattern'
 
-import server from './server.js'
-import ORIGIN from './origin/index.js'
-import DEFAULT_RESERVED from './reserved/urls.js'
-import HttpError from '../shared/error/http/index.js'
-import HttpErrorCode from '../shared/error/http/code.js'
+import server from '../server.js'
+import ORIGIN from '../origin/index.js'
+import DEFAULT_RESERVED from '../reserved/urls.js'
+import HttpError from '../../shared/error/http/index.js'
+import HttpErrorCode from '../../shared/error/http/code.js'
 
 type URLParams = Record<string, string>
 

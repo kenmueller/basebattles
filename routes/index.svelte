@@ -17,7 +17,7 @@
 			const response = await fetch('/battles', { method: 'POST' })
 			if (!response.ok) throw await HttpError.fromResponse(response)
 
-			await goto(`/${await response.text()}`)
+			await goto(`/${encodeURIComponent(await response.text())}`)
 		} catch (error) {
 			loading = false
 			handleError(error)

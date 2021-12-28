@@ -8,6 +8,8 @@ import security from './security.js'
 import reserved from './reserved/index.js'
 import newBattle from './battle/new.js'
 
+import './battle/stream.js'
+
 const handlers = [newBattle]
 
 if (!DEV) app.use(compression({ threshold: 0 }))
